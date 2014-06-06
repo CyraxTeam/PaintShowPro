@@ -41,6 +41,7 @@ body div#wrapper header div#title {
 body div#wrapper header div#title h4 {
   color: white;
   font-weight: normal;
+  text-shadow: 0px 0px 5px black;
 }
 body div#wrapper div#container {
   zoom: 1;
@@ -62,15 +63,24 @@ body div#wrapper div#container button#clear {
   background: #344659;
   color: white;
 }
+body div#wrapper div#container button#clear:hover {
+  background: #e85727;
+}
 body div#wrapper div#container div#draw-properties form fieldset {
   padding: 5px 10px 10px 10px;
   margin-bottom: 10px;
   display: block;
   width: 25%;
+  background: #f1f1f1;
   border: 1px solid #535252;
+  box-shadow: inset 2px 2px 20px #606a76;
 }
 body div#wrapper div#container div#draw-properties form fieldset legend {
   padding: 0 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+  box-shadow: inset 2px 2px 10px black;
 }
 body div#wrapper div#container div#draw-properties form fieldset label {
   font-weight: bold;
@@ -89,6 +99,7 @@ body div#wrapper div#container canvas#sheet {
   float: left;
   margin-right: 10px;
   background: #F1F1F1;
+  box-shadow: 0px 0px 5px #666363;
 }
 body div#wrapper div#container div#figure-selection {
   float: right;
@@ -96,10 +107,15 @@ body div#wrapper div#container div#figure-selection {
 }
 body div#wrapper div#container div#figure-selection fieldset {
   padding: 10px;
+  background: #f1f1f1;
   border: 1px solid #535252;
+  box-shadow: inset 2px 2px 20px #606a76;
 }
 body div#wrapper div#container div#figure-selection fieldset legend {
   padding: 0 10px;
+  font-size: 1.1em;
+  color: white;
+  box-shadow: inset 2px 2px 10px black;
 }
 body div#wrapper div#container div#figure-selection ul {
   list-style-type: none;

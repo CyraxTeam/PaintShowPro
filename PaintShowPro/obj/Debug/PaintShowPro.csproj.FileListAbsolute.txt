@@ -10,3 +10,9 @@ E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\bin\
 E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
 E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\obj\Debug\PaintShowPro.dll
 E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\obj\Debug\PaintShowPro.pdb
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\bin\PaintShowPro.dll.config
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\bin\PaintShowPro.dll
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\bin\PaintShowPro.pdb
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.dll
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.pdb

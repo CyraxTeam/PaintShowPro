@@ -4,9 +4,9 @@ E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWo
 E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
 E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.dll
 E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.pdb
-D:\Todor\Telerik Software Academy\08.JavaSvript-2UI&DOM\TeamWork\Repository\PaintShowPro\bin\PaintShowPro.dll.config
-D:\Todor\Telerik Software Academy\08.JavaSvript-2UI&DOM\TeamWork\Repository\PaintShowPro\bin\PaintShowPro.dll
-D:\Todor\Telerik Software Academy\08.JavaSvript-2UI&DOM\TeamWork\Repository\PaintShowPro\bin\PaintShowPro.pdb
-D:\Todor\Telerik Software Academy\08.JavaSvript-2UI&DOM\TeamWork\Repository\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
-D:\Todor\Telerik Software Academy\08.JavaSvript-2UI&DOM\TeamWork\Repository\PaintShowPro\obj\Debug\PaintShowPro.dll
-D:\Todor\Telerik Software Academy\08.JavaSvript-2UI&DOM\TeamWork\Repository\PaintShowPro\obj\Debug\PaintShowPro.pdb
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\bin\PaintShowPro.dll.config
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\bin\PaintShowPro.dll
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\bin\PaintShowPro.pdb
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\obj\Debug\PaintShowPro.dll
+E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro2\PaintShowPro\obj\Debug\PaintShowPro.pdb

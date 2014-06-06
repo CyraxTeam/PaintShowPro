@@ -1,0 +1,182 @@
+﻿.linear-gradient(@from-color,@from-pos,@to-color,@to-pos,@repeat: no-repeat) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+    background-repeat: @repeat;
+}
+.css-gradient(@from: #20416A, @to: #3D69A5) {
+    background-color: @to;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@from),  to(@to));
+    background-image: -webkit-linear-gradient(top, @from, @to);
+    background-image: -moz-linear-gradient(top, @from, @to);
+    background-image: -o-linear-gradient(top, @from, @to);
+    background-image: -ms-linear-gradient(top, @from, @to);
+    background-image: linear-gradient(top, @from, @to);
+}
+.css-gradient(darken,@amount: 10%, @from: #20416A, @to: #3D69A5){
+    .css-gradient(darken(@from,@amount),darken(@to,@amount));
+}
+.css-gradient(lighten,@amount: 10%, @from: #20416A, @to: #3D69A5){
+    .css-gradient(lighten(@from,@amount),lighten(@to,@amount));
+}
+.clearfix() {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        height: 0;
+        content: "";
+        clear:both; 
+    }
+}
+//Border mixin
+
+.customBorder (@color, @style, @width){
+    border:@width @style @color;
+}
+@radius:5px;
+.borderRadius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+///Variables
+@borderColor:#535252;
+///Reset
+html, body, div, ul,form,fieldset,label,legend,input,button,span, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    width:95%;
+    padding:25px;
+    background: #F1F1F1;
+
+    div#wrapper {
+        width:100%;
+        border:1px solid @borderColor;
+      
+        margin:0 auto;
+        
+        header{
+            
+            div#title{
+                
+                padding:5px 15px;
+                .css-gradient(#809BC0,#6A86B5);
+
+                h4{
+                    color:white;
+                    font-weight:normal;
+                }
+            }
+        }
+        div#container{
+            .clearfix();
+             padding:10px;
+             background:#DBDBDB;
+             button#clear{
+                 float:right;
+                 padding:5px 10px;
+                 .borderRadius(5px);
+                 background:#344659;
+                 color:white;
+
+             }
+             div#draw-properties{
+
+                form{
+                
+                    fieldset{
+                        padding:5px 10px 10px 10px;
+                        margin-bottom:10px;
+                        display:block;
+                        width:25%;
+                        border: 1px solid @borderColor;
+                        legend{
+                            padding:0 10px;
+                        }
+                        label{
+                            font-weight:bold;
+                            //text-transform:uppercase;
+                            margin:0 5px;
+                            &:hover{
+                                color:#8d8d8d;
+                            }
+
+                        }
+                        input{
+
+                            width:35px;
+
+                        }
+                    }
+                
+                }
+             }
+        
+            canvas#sheet{
+                display:block;
+                border:10px solid white;
+                box-shadow:1px,1px,5px,none;
+                float:left;
+                margin-right:10px;
+                background: #F1F1F1;
+
+            }
+            div#figure-selection{
+                float:right;
+                width:20%;
+
+                fieldset{
+                    padding:10px;
+                    border: 1px solid @borderColor;
+                    legend{
+                        padding:0 10px;
+                    }
+                }
+                ul{ 
+                    list-style-type:none;
+                    li{
+                        span{
+
+                        }
+                        ul#raster, ul#vector{
+                            li{
+                                span{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+             div#coordinates{
+                 background:#606a76;
+                 padding:0 10px;
+                 float:left;
+                 width:900px;
+                 margin-top:10px;
+                span{
+                    color:white;
+                    margin-right:20px;
+                }
+
+            }
+        }
+        
+        footer{
+          
+        }
+        
+    }
+
+}

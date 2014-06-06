@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cyrax Team PaintShowPro</title>
+    <link href="styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <header id="mainHeader">
+            <div id="title">
+                <h4>Cyrax Team PaintShowPro</h4>
+            </div>
+        </header>
+        
+        <div id="container">
+            <button id="clear">Clear draw board</button>
+            <div id="draw-properties">
+                <form>
+                    <fieldset>
+                        <legend>Draw properties</legend>
+                        <label for="fillColor">Fill </label>
+                        <input type="color" value="" id="fillColor" />
+                        <label for="strokeColor">Stroke </label>
+                        <input type="color" value="" id="strokeColor" />
+                        <label for="strokeWeight">Weight: </label>
+                        <input type="number" id="strokeWeight" value="1" min="0" max="15" />
+                    </fieldset>
+                </form>
+            </div>
+            <canvas id="sheet" width="900" height="600"></canvas>
+            <div id="figure-selection">
+                <fieldset>
+                    <legend>Figure selection</legend>  
+                    <ul>
+                        <li>
+                            <span id="rasterSelect">Draw raster</span>
+                            <ul id="raster">
+                                <li><span>circle</span></li>
+                                <li><span>square</span></li>
+                                <li><span>triangle</span></li>
+                                <li><span>line</span></li>
+                                <li><span>dashed line</span></li>
+                                <li><span>quadratic curve</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span id="vectorSelect">Draw vector</span>
+                            <ul id="vector">
+                                <li><span>circle</span></li>
+                                <li><span>square</span></li>
+                                <li><span>triangle</span></li>
+                                <li><span>line</span></li>
+                                <li><span>dashed line</span></li>
+                                <li><span>quadratic curve</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div id="coordinates">
+                <span id="xCoord"> X: </span>
+                <span id="yCoord"> Y: </span>
+            </div>
+        </div>
+        <footer>
+           
+            
+
+        </footer>
+
+    </div>
+</body>
+</html>

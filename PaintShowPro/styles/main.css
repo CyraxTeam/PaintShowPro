@@ -1,0 +1,117 @@
+﻿html,
+body,
+div,
+ul,
+form,
+fieldset,
+label,
+legend,
+input,
+button,
+span,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  width: 95%;
+  padding: 25px;
+  background: #F1F1F1;
+}
+body div#wrapper {
+  width: 100%;
+  border: 1px solid #535252;
+  margin: 0 auto;
+}
+body div#wrapper header div#title {
+  padding: 5px 15px;
+  background-color: #6a86b5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#809bc0), to(#6a86b5));
+  background-image: -webkit-linear-gradient(top, #809bc0, #6a86b5);
+  background-image: -moz-linear-gradient(top, #809bc0, #6a86b5);
+  background-image: -o-linear-gradient(top, #809bc0, #6a86b5);
+  background-image: -ms-linear-gradient(top, #809bc0, #6a86b5);
+  background-image: linear-gradient(top, #809bc0, #6a86b5);
+}
+body div#wrapper header div#title h4 {
+  color: white;
+  font-weight: normal;
+}
+body div#wrapper div#container {
+  zoom: 1;
+  padding: 10px;
+  background: #DBDBDB;
+}
+body div#wrapper div#container:after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+}
+body div#wrapper div#container button#clear {
+  float: right;
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #344659;
+  color: white;
+}
+body div#wrapper div#container div#draw-properties form fieldset {
+  padding: 5px 10px 10px 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 25%;
+  border: 1px solid #535252;
+}
+body div#wrapper div#container div#draw-properties form fieldset legend {
+  padding: 0 10px;
+}
+body div#wrapper div#container div#draw-properties form fieldset label {
+  font-weight: bold;
+  margin: 0 5px;
+}
+body div#wrapper div#container div#draw-properties form fieldset label:hover {
+  color: #8d8d8d;
+}
+body div#wrapper div#container div#draw-properties form fieldset input {
+  width: 35px;
+}
+body div#wrapper div#container canvas#sheet {
+  display: block;
+  border: 10px solid white;
+  box-shadow: 1px,1px,5px,none;
+  float: left;
+  margin-right: 10px;
+  background: #F1F1F1;
+}
+body div#wrapper div#container div#figure-selection {
+  float: right;
+  width: 20%;
+}
+body div#wrapper div#container div#figure-selection fieldset {
+  padding: 10px;
+  border: 1px solid #535252;
+}
+body div#wrapper div#container div#figure-selection fieldset legend {
+  padding: 0 10px;
+}
+body div#wrapper div#container div#figure-selection ul {
+  list-style-type: none;
+}
+body div#wrapper div#container div#coordinates {
+  background: #606a76;
+  padding: 0 10px;
+  float: left;
+  width: 900px;
+  margin-top: 10px;
+}
+body div#wrapper div#container div#coordinates span {
+  color: white;
+  margin-right: 20px;
+}

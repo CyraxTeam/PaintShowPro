@@ -1,0 +1,6 @@
+E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\bin\PaintShowPro.dll.config
+E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\bin\PaintShowPro.dll
+E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\bin\PaintShowPro.pdb
+E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
+E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.dll
+E:\ProgrammingCorner\Web Upr\JavaScript\_JavaScript2014 DOM&UI\_homeworks\TeamWork\CyraxPaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.pdb

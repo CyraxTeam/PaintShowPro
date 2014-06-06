@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imgs\pentagon.png" />
+    <Content Include="imgs\triangle19.png" />
+    <Content Include="imgs\vector15.png" />
+    <Content Include="imgs\vector16.png" />
     <Content Include="scripts\script.js" />
     <Content Include="styles\main.css">
       <DependentUpon>main.less</DependentUpon>

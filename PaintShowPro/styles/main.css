@@ -21,7 +21,7 @@ body {
   font-size: 12px;
   width: 95%;
   padding: 25px;
-  background: #F1F1F1;
+  background: black;
 }
 body div#wrapper {
   width: 100%;
@@ -46,7 +46,7 @@ body div#wrapper header div#title h4 {
 body div#wrapper div#container {
   zoom: 1;
   padding: 10px;
-  background: #DBDBDB;
+  background: #ced8e6;
 }
 body div#wrapper div#container:after {
   display: block;
@@ -98,7 +98,7 @@ body div#wrapper div#container canvas#sheet {
   box-shadow: 1px,1px,5px,none;
   float: left;
   margin-right: 10px;
-  background: #F1F1F1;
+  background: white;
   box-shadow: 0px 0px 5px #666363;
 }
 body div#wrapper div#container div#figure-selection {

@@ -16,3 +16,9 @@ E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\bin\P
 E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
 E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.dll
 E:\ProgrammingCorner\ProgramUPR\GitHubRepoFolder\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.pdb
+C:\Users\yavor\Google Drive\TelerikAcademy\Javascript DOM&UI\TeamWork Cyrax\PaintShowPro\bin\PaintShowPro.dll.config
+C:\Users\yavor\Google Drive\TelerikAcademy\Javascript DOM&UI\TeamWork Cyrax\PaintShowPro\bin\PaintShowPro.dll
+C:\Users\yavor\Google Drive\TelerikAcademy\Javascript DOM&UI\TeamWork Cyrax\PaintShowPro\bin\PaintShowPro.pdb
+C:\Users\yavor\Google Drive\TelerikAcademy\Javascript DOM&UI\TeamWork Cyrax\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
+C:\Users\yavor\Google Drive\TelerikAcademy\Javascript DOM&UI\TeamWork Cyrax\PaintShowPro\obj\Debug\PaintShowPro.dll
+C:\Users\yavor\Google Drive\TelerikAcademy\Javascript DOM&UI\TeamWork Cyrax\PaintShowPro\obj\Debug\PaintShowPro.pdb

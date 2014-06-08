@@ -1,5 +1,5 @@
 ﻿(function () {
-    var lineButton = document.querySelector('button.dahedline');
+    var lineButton = document.querySelector('#dahedline');
     lineButton.addEventListener('click', onDashLienButtonClick);
 
     function onDashLienButtonClick(ev) {

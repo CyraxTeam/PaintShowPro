@@ -9,8 +9,8 @@
     stage.add(mainLayer);
 
     ///draw resizable circle
-    var circleButton = document.getElementsByClassName('circle')[0];
-    circleButton.addEventListener('click', function () { drawResizableCircle() });
+    //var circleButton = document.getElementsByClassName('circle')[0];
+    //circleButton.addEventListener('click', function () { drawResizableCircle() });
     var canvasOffset = $("#canvas-container").offset();
     var offsetX = canvasOffset.left;
     var offsetY = canvasOffset.top;
@@ -95,6 +95,9 @@
 
     var squareButton = document.getElementById('square');
     squareButton.addEventListener('click', drawRectangle(stage, mainLayer));
+
+    var circleButton = document.getElementById('circle');
+    circleButton.addEventListener('click', function () { drawCircle(stage, mainLayer) });
 
     function drawPen() {
         var isMouseDown = false;

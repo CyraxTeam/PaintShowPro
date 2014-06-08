@@ -1,10 +1,13 @@
-﻿// changed background color just for testing
-window.onload = function () {
-    
+﻿window.onload = function () {
+    var stage = new Kinetic.Stage({
+        container: 'canvas-container',
+        width: 900,
+        height: 600
+    });
+
+    var mainLayer = new Kinetic.Layer();
 
     ///////////////// pen - draw free line
-    var canvas = document.getElementById('sheet');
-    var ctx = canvas.getContext('2d');
 
     var penButton = document.getElementById('penRasterBtn')
     penButton.addEventListener('click', function () { drawPen() });
@@ -38,4 +41,3 @@ window.onload = function () {
     }
     /////////////////
 }
-// end of testing - Can be deleted

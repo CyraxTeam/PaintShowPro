@@ -68,6 +68,7 @@
     <Content Include="scripts\drawRectangle.js" />
     <Content Include="scripts\kinetic-v5.1.0.min.js" />
     <Content Include="scripts\script.js" />
+    <Content Include="scripts\updateMouseCoord.js" />
     <Content Include="styles\main.css">
       <DependentUpon>main.less</DependentUpon>
     </Content>

@@ -6,6 +6,7 @@
     });
 
     var mainLayer = new Kinetic.Layer();
+    stage.add(mainLayer);
 
     ///draw resizable circle
     var circleButton = document.getElementsByClassName('circle')[0];
@@ -92,7 +93,7 @@
     penButton.addEventListener('click', function () { drawPen() });
 
     var squareButton = document.getElementById('square');
-    squareButton.addEventListener('click', function () { drawRectangle(stage) });
+    squareButton.addEventListener('click', function () { drawRectangle(stage, mainLayer) });
 
     function drawPen() {
         var isMouseDown = false;

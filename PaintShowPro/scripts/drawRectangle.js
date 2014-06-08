@@ -10,8 +10,10 @@
         rectStroke = document.getElementById('strokeColor').value,
         rectStrokeWidth = document.getElementById('strokeWeight').value,
         rectFill = document.getElementById('fillColor').value,
-        rectLayer = new Kinetic.Layer;
+        rectLayer = new Kinetic.Layer,
+        squareButton = document.getElementById('square');
 
+    squareButton.removeEventListener('click', drawRectangle);
 
     $("#canvas-container").mousedown(function (e) {
         handleMouseDown(e);
@@ -23,7 +25,6 @@
 
     $("#canvas-container").mouseup(function (e) {
         handleMouseUp(e);
-        return;
     });
 
     function drawDynamicRectangle() {
@@ -36,9 +37,7 @@
             stroke: rectStroke,
             strokeWidth: rectStrokeWidth,
             draggable: true
-
         });
-
     }
 
     function handleMouseDown(e) {
@@ -73,4 +72,5 @@
         stage.add(mainLayer);
         isMouseDown = false;
     }
+
 }

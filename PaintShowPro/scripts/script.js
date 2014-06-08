@@ -94,7 +94,7 @@
     penButton.addEventListener('click', function () { drawPen() });
 
     var squareButton = document.getElementById('square');
-    squareButton.addEventListener('click', function rectangle() { drawRectangle(stage, mainLayer) });
+    squareButton.addEventListener('click', drawRectangle(stage, mainLayer));
 
     function drawPen() {
         var isMouseDown = false;

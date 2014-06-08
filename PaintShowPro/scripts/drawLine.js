@@ -1,4 +1,4 @@
-﻿var drawLine = document.getElementsByClassName('line')[0];
+﻿var drawLine = document.getElementById('line');
 
 drawLine.addEventListener('click', function () {
 

@@ -10,7 +10,7 @@
         rectLayer = new Kinetic.Layer,
         squareButton = document.getElementById('square');
 
-    console.log(rectFill);
+    //console.log(rectFill);
 
     squareButton.removeEventListener('click', drawRectangle);
 

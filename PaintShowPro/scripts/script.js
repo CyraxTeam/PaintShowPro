@@ -6,6 +6,7 @@
     });
 
     var mainLayer = new Kinetic.Layer();
+    stage.add(mainLayer);
 
     ///draw resizable circle
     var circleButton = document.getElementsByClassName('circle')[0];
@@ -86,14 +87,14 @@
         stage.add(mainLayer);
     }
 
-    
+
     ///////////////// pen - draw free line
 
     var penButton = document.getElementById('penRasterBtn')
     penButton.addEventListener('click', function () { drawPen() });
 
     var squareButton = document.getElementById('square');
-    squareButton.addEventListener('click', function () { drawRectangle(stage) });
+    squareButton.addEventListener('click', drawRectangle(stage, mainLayer));
 
     function drawPen() {
         var isMouseDown = false;
@@ -149,5 +150,5 @@
     }
     updateMouseCoord();
     /////////////////
-    
+
 }

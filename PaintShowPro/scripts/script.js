@@ -87,14 +87,14 @@
         stage.add(mainLayer);
     }
 
-    
+
     ///////////////// pen - draw free line
 
     var penButton = document.getElementById('penRasterBtn')
     penButton.addEventListener('click', function () { drawPen() });
 
     var squareButton = document.getElementById('square');
-    squareButton.addEventListener('click', function () { drawRectangle(stage, mainLayer) });
+    squareButton.addEventListener('click', function rectangle() { drawRectangle(stage, mainLayer) });
 
     function drawPen() {
         var isMouseDown = false;
@@ -150,5 +150,5 @@
     }
     updateMouseCoord();
     /////////////////
-    
+
 }

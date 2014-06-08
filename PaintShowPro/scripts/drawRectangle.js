@@ -35,7 +35,7 @@
             fill: rectFill,
             stroke: rectStroke,
             strokeWidth: rectStrokeWidth,
-			draggable: true
+            draggable: true
 
         });
 
@@ -67,10 +67,6 @@
     }
 
     function handleMouseUp(e) {
-        if (!isMouseDown) {
-            return;
-        }
-
         e.preventDefault();
         e.stopPropagation();
         mainLayer.add(dynamicRectangle)

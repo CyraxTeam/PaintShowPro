@@ -99,12 +99,13 @@ body div#wrapper div#container div#draw-properties form fieldset input {
 }
 body div#wrapper div#container div#canvas-container {
   display: block;
-  border: 10px solid white;
   box-shadow: 1px,1px,5px,none;
   float: left;
   margin-right: 10px;
   background: white;
   box-shadow: 0px 0px 5px #666363;
+  width: 900px;
+  height: 600px;
 }
 body div#wrapper div#container div#figure-selection {
   float: right;

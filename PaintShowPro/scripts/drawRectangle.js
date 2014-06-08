@@ -34,7 +34,8 @@
             height: (mouseY - startY),
             fill: rectFill,
             stroke: rectStroke,
-            strokeWidth: rectStrokeWidth
+            strokeWidth: rectStrokeWidth,
+			draggable: true
 
         });
 

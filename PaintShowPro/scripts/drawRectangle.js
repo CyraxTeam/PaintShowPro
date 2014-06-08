@@ -13,6 +13,8 @@
         rectLayer = new Kinetic.Layer,
         squareButton = document.getElementById('square');
 
+    console.log(rectFill);
+
     squareButton.removeEventListener('click', drawRectangle);
 
     $("#canvas-container").mousedown(function (e) {

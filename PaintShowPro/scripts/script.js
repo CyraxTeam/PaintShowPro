@@ -12,6 +12,9 @@
     var penButton = document.getElementById('penRasterBtn')
     penButton.addEventListener('click', function () { drawPen() });
 
+    var squareButton = document.getElementById('square');
+    squareButton.addEventListener('click', function () { drawRectangle() });
+
     function drawPen() {
         var isMouseDown = false;
         var mouseClickX;

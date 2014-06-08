@@ -7,9 +7,6 @@
         endX,
         endY,
         dynamicRectangle,
-        rectStroke = document.getElementById('strokeColor').value,
-        rectStrokeWidth = document.getElementById('strokeWeight').value,
-        rectFill = document.getElementById('fillColor').value,
         rectLayer = new Kinetic.Layer,
         squareButton = document.getElementById('square');
 
@@ -35,9 +32,9 @@
             y: startY,
             width: (mouseX - startX),
             height: (mouseY - startY),
-            fill: rectFill,
-            stroke: rectStroke,
-            strokeWidth: rectStrokeWidth,
+            fill: document.getElementById('fillColor').value,
+            stroke: document.getElementById('strokeColor').value,
+            strokeWidth: document.getElementById('strokeWeight').value,
             draggable: true
         });
     }

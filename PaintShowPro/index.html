@@ -3,13 +3,7 @@
 <head>
     <title>Cyrax Team PaintShowPro</title>
     <link href="styles/main.css" rel="stylesheet" />
-    <style>
-        #the-canvas{
-            top:130px;
-            left:35px;
-            display:none;
-        }
-    </style>
+    
     <script src="scripts/jquery-2.1.1.js"></script>
     <script src="scripts/kinetic-v5.1.0.min.js"></script>
     <script src="scripts/script.js" type="text/javascript"></script>
@@ -40,7 +34,7 @@
                 </form>
             </div>
             <div id="canvas-container"></div>
-            <canvas id="the-canvas" width="900" height="600" style="position:absolute"></canvas>
+            <canvas id="the-canvas" width="900" height="600"></canvas>
             <div id="figure-selection">
                 <fieldset>
                     <legend>Figure selection</legend>  
@@ -48,13 +42,15 @@
                         <li>
                             <span id="rasterSelect">Draw raster</span>
                             <ul id="raster">
-                                <li><button class="circle" id="circle">circle</button></li>
-                                <li><button class="square" id="square">square</button></li>
-                                <li><button class="triangle">triangle</button></li>
-                                <li><button class="poligon">poligon</button></li>
-                                <li><button class="line">line</button></li>
-                                <li><button class="dahedline">dashed line</button></li>
-                                <li><button class="pen" id="penRasterBtn">pen</button></li>
+                                <li><button id="circle">circle</button></li>
+                                <li><button id="elipse">elipse</button></li>
+                                <li><button id="square">square</button></li>
+                                <li><button id="triangle">triangle</button></li>
+                                <li><button id="poligon">poligon</button></li>
+                                <li><button id="line">line</button></li>
+                                <li><button id="dahedline">dashed line</button></li>
+                                <li><button id="penRasterBtn">pen</button></li>
+                                <li><button id="text">text</button></li>
                             </ul>
                             <div id="lineProperties">
                                 <label for="dash">Dash: </label>
@@ -69,7 +65,6 @@
             </div>
             <div id="coordinates">
                 <span id="coordinates"> X: </span>
-
             </div>
         </div>
         <footer></footer>

@@ -107,6 +107,12 @@ body div#wrapper div#container div#canvas-container {
   width: 900px;
   height: 600px;
 }
+body div#wrapper div#container canvas#the-canvas {
+  top: 130px;
+  left: 35px;
+  display: none;
+  position: absolute;
+}
 body div#wrapper div#container div#figure-selection {
   float: right;
   width: 20%;

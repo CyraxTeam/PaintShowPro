@@ -136,23 +136,6 @@ body div#wrapper div#container div#figure-selection ul {
 body div#wrapper div#container div#figure-selection ul li ul#raster li,
 body div#wrapper div#container div#figure-selection ul li ul#vector li {
   display: inline-block;
-  /*span#triangle{
-                                        background-image: url(../imgs/triangle19.png);
-                                        background-repeat:no-repeat;
-                                        background-position:top left;
-                                    }
-                                    #rectangle{
-                                       background-image: url(../imgs/vector15.png);
-                                    }
-                                    #circle{
-                                        background-image: url(../imgs/vector16.png);
-                                    }
-                                    #poligon{
-                                        background-image: url(../imgs/pentagon.png);
-                                    }
-                                    #line{
-                                        background-image: url(../imgs/triangle19.png);
-                                    }*/
 }
 body div#wrapper div#container div#figure-selection ul li ul#raster li button,
 body div#wrapper div#container div#figure-selection ul li ul#vector li button {

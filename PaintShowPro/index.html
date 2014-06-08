@@ -3,6 +3,13 @@
 <head>
     <title>Cyrax Team PaintShowPro</title>
     <link href="styles/main.css" rel="stylesheet" />
+    <style>
+        #the-canvas{
+            top:130px;
+            left:35px;
+            display:none;
+        }
+    </style>
     <script src="scripts/jquery-2.1.1.js"></script>
     <script src="scripts/kinetic-v5.1.0.min.js"></script>
     <script src="scripts/script.js" type="text/javascript"></script>
@@ -15,7 +22,7 @@
                 <h4>Cyrax Team PaintShowPro</h4>
             </div>
         </header>
-        
+
         <div id="container">
             <button id="clear">Clear draw board</button>
             <div id="draw-properties">
@@ -32,9 +39,10 @@
                 </form>
             </div>
             <div id="canvas-container"></div>
+            <canvas id="the-canvas" width="900" height="600" style="position:absolute"></canvas>
             <div id="figure-selection">
                 <fieldset>
-                    <legend>Figure selection</legend>  
+                    <legend>Figure selection</legend>
                     <ul>
                         <li>
                             <span id="rasterSelect">Draw raster</span>
@@ -55,13 +63,11 @@
                 <span id="yCoord"> Y: </span>
             </div>
         </div>
-        <footer>
-          
-        </footer>
-
-    </div>\
+        <footer></footer>
+    </div>
     <script src="scripts/kinetic-v5.1.0.min.js"></script>
     <script src="scripts/script.js" type="text/javascript"></script>
     <script src="scripts/drawRectangle.js"></script>
+    <script src="scripts/drawLine.js"></script>
 </body>
 </html>

@@ -183,6 +183,23 @@ body div#wrapper div#container div#figure-selection ul li ul#vector li button:ho
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db3f2', endColorstr='#1e69de', GradientType=0);
   /* IE6-9 */
 }
+body div#wrapper div#container div#figure-selection div#lineProperties {
+  width: 85%;
+  padding: 10px;
+  background: #f1f1f1;
+  border: 1px solid #535252;
+  box-shadow: inset 2px 2px 20px #606a76;
+  visibility: hidden;
+}
+body div#wrapper div#container div#figure-selection div#lineProperties input {
+  width: 30px;
+  margin-right: 10px;
+}
+body div#wrapper div#container div#figure-selection div#lineProperties label {
+  color: black;
+  font-weight: bold;
+  margin-right: 5px;
+}
 body div#wrapper div#container div#coordinates {
   border: 1px solid #535252;
   background: #f1f1f1;

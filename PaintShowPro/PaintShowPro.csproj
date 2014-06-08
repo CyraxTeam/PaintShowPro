@@ -61,6 +61,7 @@
     <Content Include="imgs\triangle19.png" />
     <Content Include="imgs\vector15.png" />
     <Content Include="imgs\vector16.png" />
+    <Content Include="scripts\drawDashedLine.js" />
     <Content Include="scripts\drawRectangle.js" />
     <Content Include="scripts\kinetic-v5.1.0.min.js" />
     <Content Include="scripts\script.js" />

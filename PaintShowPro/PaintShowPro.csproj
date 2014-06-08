@@ -62,6 +62,7 @@
     <Content Include="imgs\vector15.png" />
     <Content Include="imgs\vector16.png" />
     <Content Include="scripts\drawCircle.js" />
+    <Content Include="scripts\drawDashedLine.js" />
     <Content Include="scripts\drawLine.js" />
     <Content Include="scripts\drawRectangle.js" />
     <Content Include="scripts\kinetic-v5.1.0.min.js" />

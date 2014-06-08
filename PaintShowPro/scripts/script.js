@@ -86,6 +86,7 @@
         stage.add(mainLayer);
     }
 
+    
     ///////////////// pen - draw free line
 
     var penButton = document.getElementById('penRasterBtn')

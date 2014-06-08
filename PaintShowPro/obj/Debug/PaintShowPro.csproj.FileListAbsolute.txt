@@ -27,3 +27,9 @@ C:\Users\student\Desktop\Todor-Teamwork\PaintShowPro\bin\PaintShowPro.pdb
 C:\Users\student\Desktop\Todor-Teamwork\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
 C:\Users\student\Desktop\Todor-Teamwork\PaintShowPro\obj\Debug\PaintShowPro.dll
 C:\Users\student\Desktop\Todor-Teamwork\PaintShowPro\obj\Debug\PaintShowPro.pdb
+C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\bin\PaintShowPro.dll.config
+C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\bin\PaintShowPro.dll
+C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\bin\PaintShowPro.pdb
+C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
+C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.dll
+C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.pdb

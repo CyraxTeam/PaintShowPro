@@ -23,6 +23,9 @@
     var elipseButton = document.getElementById('elipse');
     elipseButton.addEventListener('click', function () { drawElipse(stage,mainLayer) });
 
+    var textButton = document.getElementById('text');
+    textButton.addEventListener('ckick', readAndDrawText(stage, mainLayer));
+
     function drawPen() {
         var isMouseDown = false;
         var mouseClickX;

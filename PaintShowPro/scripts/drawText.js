@@ -1,5 +1,7 @@
-﻿function readAndDrawText(stage, mainLayer) {
-    var inputField = document.createElement('textarea');
+﻿function drawText(e) {
+    var inputField = document.createElement('textarea'),
+        stage = e.target.stage,
+        mainLayer = e.target.mainLayer;
     inputField.id = 'textarea-text-to-draw';
     var styles = 'width: 500px; height: 100px; top: 200px; left: 200px; position: absolute';
     inputField.setAttribute('style', styles);

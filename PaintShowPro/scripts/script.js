@@ -36,10 +36,10 @@
     textButton.stage = stage;
     textButton.mainLayer = mainLayer;
 
-    var dashedLineButton = document.getElementById('dashedLine');
-    dashedLineButton.addEventListener('click', drawDashedLine);
-    dashedLineButton.stage = stage;
-    dashedLineButton.mainLayer = mainLayer;
+    //var dashedLineButton = document.getElementById('dashedLine');
+    //dashedLineButton.addEventListener('click', drawDashedLine);
+    //dashedLineButton.stage = stage;
+    //dashedLineButton.mainLayer = mainLayer;
 
     var poligonButton = document.getElementById('poligon');
     poligonButton.addEventListener('click', drawPoligon);

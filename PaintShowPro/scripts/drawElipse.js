@@ -1,11 +1,13 @@
-﻿function drawElipse(stage, mainLayer) {
-
+﻿function drawElipse(e) {
     var canvasOffset = $("#canvas-container").offset();
     var offsetX = canvasOffset.left;
     var offsetY = canvasOffset.top;
     var startX;
     var startY;
     var isDown = false;
+    var stage = e.target.stage;
+    var mainLayer = e.target.mainLayer;
+
 
     $("#canvas-container").mousedown(function (e) {
         handleMouseDown(e);
@@ -35,6 +37,7 @@
         }
         e.preventDefault();
         e.stopPropagation();
+        $("#canvas-container").unbind();
         isDown = false;
     }
 
@@ -44,6 +47,7 @@
         }
         e.preventDefault();
         e.stopPropagation();
+        $("#canvas-container").unbind();
         isDown = false;
     }
 

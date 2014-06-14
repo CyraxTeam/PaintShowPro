@@ -1,5 +1,7 @@
-﻿function drawCircle(stage, mainLayer) {
+﻿function drawCircle(e) {
     var isMouseDown = false,
+        stage = e.target.stage,
+        mainLayer = e.target.mainLayer,
         startX,
         startY,
         mouseX,
@@ -11,7 +13,6 @@
         circleStrokeWidth = document.getElementById('strokeWeight').value,
         circleFill = document.getElementById('fillColor').value,
         circleLayer = new Kinetic.Layer;
-
 
     $("#canvas-container").mousedown(function (e) {
         handleMouseDown(e);
@@ -72,6 +73,8 @@
         e.stopPropagation();
         mainLayer.add(dynamicCircle)
         stage.add(mainLayer);
+        circleLayer.destroy();
+        $("#canvas-container").unbind();
         isMouseDown = false;
     }
 }

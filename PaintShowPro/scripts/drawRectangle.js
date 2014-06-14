@@ -1,5 +1,7 @@
-﻿function drawRectangle(stage, mainLayer) {
+﻿function drawRectangle(e) {
     var isMouseDown = false,
+        stage = e.target.stage,
+        mainLayer = e.target.mainLayer,
         startX,
         startY,
         mouseX,
@@ -7,12 +9,7 @@
         endX,
         endY,
         dynamicRectangle,
-        rectLayer = new Kinetic.Layer,
-        squareButton = document.getElementById('square');
-
-    //console.log(rectFill);
-
-    squareButton.removeEventListener('click', drawRectangle);
+        rectLayer = new Kinetic.Layer;
 
     $("#canvas-container").mousedown(function (e) {
         handleMouseDown(e);
@@ -24,6 +21,7 @@
 
     $("#canvas-container").mouseup(function (e) {
         handleMouseUp(e);
+        return;
     });
 
     function drawDynamicRectangle() {
@@ -69,6 +67,8 @@
         e.stopPropagation();
         mainLayer.add(dynamicRectangle)
         stage.add(mainLayer);
+        rectLayer.destroy();
+        $("#canvas-container").unbind();
         isMouseDown = false;
     }
 

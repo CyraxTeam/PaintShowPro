@@ -12,44 +12,29 @@
     ///////////////// pen - draw free line
 
     var penButton = document.getElementById('penRasterBtn')
-    penButton.addEventListener('click', function () { drawPen() });
+    penButton.addEventListener('click', drawPen);
+    penButton.stage = stage;
+    penButton.mainLayer = mainLayer;
 
     var squareButton = document.getElementById('square');
-    squareButton.addEventListener('click', drawRectangle(stage, mainLayer));
+    squareButton.addEventListener('click', drawRectangle);
+    squareButton.stage = stage;
+    squareButton.mainLayer = mainLayer;
 
     var circleButton = document.getElementById('circle');
-    circleButton.addEventListener('click', function () { drawCircle(stage, mainLayer) });
+    circleButton.addEventListener('click', drawCircle);
+    circleButton.stage = stage;
+    circleButton.mainLayer = mainLayer;
 
     var elipseButton = document.getElementById('elipse');
-    elipseButton.addEventListener('click', function () { drawElipse(stage,mainLayer) });
+    elipseButton.addEventListener('click', drawElipse);
+    elipseButton.stage = stage;
+    elipseButton.mainLayer = mainLayer;
 
-    function drawPen() {
-        var isMouseDown = false;
-        var mouseClickX;
-        var mouseClickY;
-
-        canvas.addEventListener('mousedown', function (ev) {
-            isMouseDown = true;
-            mouseClickX = ev.pageX - this.offsetLeft;
-            mouseClickY = ev.pageY - this.offsetTop;
-            ctx.lineWidth = document.getElementById('strokeWeight').value;
-            ctx.strokeStyle = document.getElementById('strokeColor').value;
-        });
-        canvas.addEventListener('mouseup', function () { isMouseDown = false; });
-        canvas.addEventListener('mousemove', function (ev) {
-            canvas.style.cursor = 'crosshair';
-            if (isMouseDown) {
-                ctx.beginPath();
-                ctx.moveTo(mouseClickX, mouseClickY);
-                ctx.lineCap = 'round';
-                ctx.lineTo(ev.pageX - this.offsetLeft, ev.pageY - this.offsetTop);
-                ctx.stroke();
-
-                mouseClickX = ev.pageX - this.offsetLeft;
-                mouseClickY = ev.pageY - this.offsetTop;
-            }
-        });
-    }
+    var textButton = document.getElementById('text');
+    textButton.addEventListener('click', drawText);
+    textButton.stage = stage;
+    textButton.mainLayer = mainLayer;
 
     function updateMouseCoord() {
         (function () {

@@ -1,8 +1,8 @@
-﻿function drawPoligon(ev, stage, mainLayer) {
-        alert('clicked');
-        var stage = stage;
-        var mainLayer = mainLayer;
-        //var $paper = $('canvas-container'),
+﻿function drawPoligon(ev) {
+       
+        var stage = ev.target.stage;
+        var mainLayer = ev.target.mainLayer;
+        
         var mouseClickX,
           mouseClickY;
         var points = [];
@@ -12,25 +12,19 @@
         $('#canvas-container').on('mousedown', function (ev) {
             collectMouseCoord(ev);
         });
-        //paper.addEventListener('mousedown', collectMouseCoord(e));
+        
         $('#canvas-container').on('dblclick', function (ev) {
             drawFigure(ev, stage, mainLayer);
         });
-        $('#canvas-container').off('mousedown', function (ev) {
-            collectMouseCoord(ev);
-        });
-        $('#canvas-container').off('dblclick', function (ev) {
-            drawFigure(ev, stage, mainLayer);
-        });
-        //paper.addEventListener('dblclick', drawFigure, false);
-
-        //paper.removeEventListener('mousedown', collectMouseCoord, false);
-        //paper.removeEventListener('dblclick', drawFigure,false); 
-
-
+        //$('#canvas-container').off('mousedown', function (ev) {
+        //    collectMouseCoord(ev);
+        //});
+        //$('#canvas-container').off('dblclick', function (ev) {
+        //    drawFigure(ev, stage, mainLayer);
+        //});
+       
         function collectMouseCoord(ev) {
-            // alert('clicked');
-           
+            
             mouseClickX = ev.pageX
             mouseClickY = ev.pageY
             points.push(mouseClickX * 1);
@@ -52,5 +46,6 @@
             mainLayer.add(poly);
             stage.add(mainLayer);
             points = [];
+            $("#canvas-container").unbind();
         }
     }

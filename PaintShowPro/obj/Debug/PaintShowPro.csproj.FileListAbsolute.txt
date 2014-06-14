@@ -33,3 +33,9 @@ C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\bin\PaintShowPro.pdb
 C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
 C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.dll
 C:\Users\User\Source\Repos\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.pdb
+D:\TelerikAcademy\WebAndUI\JS UI and DOM\00. TeamWork\PaintShowPro\PaintShowPro\bin\PaintShowPro.dll.config
+D:\TelerikAcademy\WebAndUI\JS UI and DOM\00. TeamWork\PaintShowPro\PaintShowPro\bin\PaintShowPro.dll
+D:\TelerikAcademy\WebAndUI\JS UI and DOM\00. TeamWork\PaintShowPro\PaintShowPro\bin\PaintShowPro.pdb
+D:\TelerikAcademy\WebAndUI\JS UI and DOM\00. TeamWork\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.csprojResolveAssemblyReference.cache
+D:\TelerikAcademy\WebAndUI\JS UI and DOM\00. TeamWork\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.dll
+D:\TelerikAcademy\WebAndUI\JS UI and DOM\00. TeamWork\PaintShowPro\PaintShowPro\obj\Debug\PaintShowPro.pdb

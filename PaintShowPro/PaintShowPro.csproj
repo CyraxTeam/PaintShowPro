@@ -61,6 +61,7 @@
     <Content Include="imgs\triangle19.png" />
     <Content Include="imgs\vector15.png" />
     <Content Include="imgs\vector16.png" />
+    <Content Include="scripts\clearDrawBoard.js" />
     <Content Include="scripts\drawCircle.js" />
     <Content Include="scripts\drawDashedLine.js" />
     <Content Include="scripts\drawElipse.js" />

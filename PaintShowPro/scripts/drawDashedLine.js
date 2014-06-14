@@ -1,42 +1,52 @@
-﻿function drawDashedLine(stage, mainLayer) {
+﻿function drawDashedLine(ev) {
+   
+    var stage = ev.target.stage;
+    var mainLayer = ev.target.mainLayer;
+    var points = [];
 
-    var dashedLineButton = document.getElementById('dahedline');
-    dashedLineButton.addEventListener('click', function () {
+    $('#lineProperties').css('visibility', 'visible');
+   
+    function getDashLineProp() {
+        var dashValue = +$('#dash').val();
+        var gapValue = +$('#dash').val();
+        var lineProperty = [dashValue , gapValue];
+        return lineProperty;
+    }
 
-        var div = document.getElementById('lineProperties');
-        div.style.visibility = 'visible';
-         function getDashLineProp(){
-            var dashValue = document.getElementById('dash').value;
-            var gapValue = document.getElementById('gap').value;
-            var lineProperty = [dashValue * 1, gapValue * 1];
-            return lineProperty;
-         }
+   
+    var mouseClickX,
+    mouseClickY;
+   
+    $('#canvas-container').on('mousedown', function (ev) {
+            getPointCooord(ev);
+    });
 
-        var paper = document.getElementById('canvas-container'),
-            mouseClickX,
-            mouseClickY;
+    $('#canvas-container').on('mousedown', function (ev) {
+        drawLine(ev);
+    });   
+    
 
-        paper.addEventListener('mousedown', function (ev) {
-            mouseClickX = ev.layerX
-            mouseClickY = ev.layerY
-            lineWeight = document.getElementById('strokeWeight').value;
-            strokeColor = document.getElementById('strokeColor').value;
-        });
+    function getPointCooord(ev) {
+        var mousePos = stage.getPointerPosition();
+            mouseClickX = mousePos.x;
+            mouseClickY = mousePos.y;
+            points.push(mouseClickX * 1);
+            points.push(mouseClickY * 1);
+    }
 
-        paper.addEventListener('mouseup', function (ev) {
-            paper.style.cursor = 'crosshair';
-            var dashedLine = new Kinetic.Line({
-                points: [mouseClickX, mouseClickY, ev.layerX, ev.layerY],
-                stroke: document.getElementById('strokeColor').value,
-                strokeWidth: document.getElementById('strokeWeight').value,
-                lineCap: 'round',
-                lineJoin: 'round',
-                dash:getDashLineProp()
-            })
-
-            mainLayer.add(dashedLine);
-            stage.add(mainLayer);
-        });
-
-    }, false);
+    function drawLine(ev) {
+       $('#canvas-container').css('cursor', 'crosshair');
+       getPointCooord(ev);
+        var dashedLine = new Kinetic.Line({
+            points: points,
+            stroke: document.getElementById('strokeColor').value,
+            strokeWidth: document.getElementById('strokeWeight').value,
+            lineCap: 'round',
+            lineJoin: 'round',
+            dash: getDashLineProp()
+        })
+        mainLayer.add(dashedLine);
+        stage.add(mainLayer);
+        
+    }
 }

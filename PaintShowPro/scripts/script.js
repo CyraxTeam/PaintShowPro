@@ -36,31 +36,14 @@
     textButton.stage = stage;
     textButton.mainLayer = mainLayer;
 
-    function updateMouseCoord() {
-        (function () {
-            var canvas = document.getElementById('canvas-container');
+    var dashedLineButton = document.getElementById('dashedLine');
+    dashedLineButton.addEventListener('click', drawDashedLine);
+    dashedLineButton.stage = stage;
+    dashedLineButton.mainLayer = mainLayer;
 
-            function writeMessage(canvas, message) {
-                var CoordCont = document.getElementById('coordinates');
-                CoordCont.innerHTML = message;
-            }
-
-            function getMousePos(canvas, evt) {
-                var rect = canvas.getBoundingClientRect();
-                return {
-                    x: evt.clientX - rect.left,
-                    y: evt.clientY - rect.top
-                };
-            }
-
-            canvas.addEventListener('mousemove', function (evt) {
-                var mousePos = getMousePos(canvas, evt);
-                var message = 'X: ' + mousePos.x + ' Y: ' + mousePos.y;
-                writeMessage(canvas, message);
-            }, false);
-        }())
-    }
-    updateMouseCoord();
-    /////////////////
+    var poligonButton = document.getElementById('poligon');
+    poligonButton.addEventListener('click', drawPoligon);
+    poligonButton.stage = stage;
+    poligonButton.mainLayer = mainLayer;
 
 }

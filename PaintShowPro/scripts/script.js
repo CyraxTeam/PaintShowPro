@@ -36,20 +36,20 @@
     textButton.stage = stage;
     textButton.mainLayer = mainLayer;
 
-    //var dashedLineButton = document.getElementById('dashedLine');
-    //dashedLineButton.addEventListener('click', drawDashedLine);
-    //dashedLineButton.stage = stage;
-    //dashedLineButton.mainLayer = mainLayer;
+    var dashedLineButton = document.getElementById('dashedLine');
+    dashedLineButton.addEventListener('click', drawDashedLine);
+    dashedLineButton.stage = stage;
+    dashedLineButton.mainLayer = mainLayer;
 
     var poligonButton = document.getElementById('poligon');
     poligonButton.addEventListener('click', drawPoligon);
     poligonButton.stage = stage;
     poligonButton.mainLayer = mainLayer;
 
-    //var clearButton = document.getElementById('clear');
-    //clearButton.addEventListener('click', clearDrawBoard);
-    //clearButton.stage = stage;
-    //clearButton.mainLayer = mainLayer;
+    var clearButton = document.getElementById('clear');
+    clearButton.addEventListener('click', clearDrawBoard);
+    clearButton.stage = stage;
+    clearButton.mainLayer = mainLayer;
 
     var triangleButton = document.getElementById('triangle');
     triangleButton.addEventListener('click', drawTriangle);

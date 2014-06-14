@@ -46,4 +46,9 @@
     poligonButton.stage = stage;
     poligonButton.mainLayer = mainLayer;
 
+    var clearButton = document.getElementById('clear');
+    clearButton.addEventListener('click', clearDrawBoard);
+    clearButton.stage = stage;
+    clearButton.mainLayer = mainLayer;
+
 }

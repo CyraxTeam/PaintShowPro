@@ -57,10 +57,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imgs\circle.png" />
+    <Content Include="imgs\dashed-line.png" />
+    <Content Include="imgs\elipse.png" />
+    <Content Include="imgs\line.png" />
+    <Content Include="imgs\mouseCursor.png" />
     <Content Include="imgs\pentagon.png" />
+    <Content Include="imgs\polygon.png" />
+    <Content Include="imgs\rect.png" />
+    <Content Include="imgs\triangle.png" />
     <Content Include="imgs\triangle19.png" />
     <Content Include="imgs\vector15.png" />
     <Content Include="imgs\vector16.png" />
+    <Content Include="scripts\animation.js" />
     <Content Include="scripts\clearDrawBoard.js" />
     <Content Include="scripts\drawCircle.js" />
     <Content Include="scripts\drawDashedLine.js" />
@@ -73,6 +82,7 @@
     <Content Include="scripts\drawTriangle.js" />
     <Content Include="scripts\jquery-2.1.1.js" />
     <Content Include="scripts\kinetic-v5.1.0.min.js" />
+    <Content Include="scripts\raphael.js" />
     <Content Include="scripts\script.js" />
     <Content Include="scripts\updateMouseCoord.js" />
     <Content Include="styles\main.css">

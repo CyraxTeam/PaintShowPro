@@ -6,4 +6,7 @@
 
     var mainLayer = new Kinetic.Layer();
     stage.add(mainLayer);
+
+    var introLayer = document.getElementById('holder');
+    introLayer.innerHTML = "";
 }

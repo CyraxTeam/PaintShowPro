@@ -46,6 +46,7 @@
                                 <li><button id="dashedline">dashed line</button></li>
                                 <li><button id="penRasterBtn">pen</button></li>
                                 <li><button id="text">text</button></li>
+                                <li><button id="intro">Intro</button></li>
                             </ul>
                             <div id="lineProperties">
                                 <label for="dash">Dash: </label>
@@ -60,6 +61,9 @@
             </div>
             <div id="coord">
                 <span id="coordinates"> X: </span>
+            </div>
+            <div id="holder" style="position:absolute">
+                <img src="imgs/mouseCursor.png" width="25" height="25" id="the-mouse" style="display:none">
             </div>
         </div>
         <footer></footer>
@@ -79,5 +83,7 @@
     <script src="scripts/drawText.js"></script>
     <script src="scripts/drawTriangle.js"></script>
     <script src="scripts/clearDrawBoard.js"></script>
+    <script src="scripts/raphael.js"></script>
+    <script src="scripts/animation.js"></script>
 </body>
 </html>

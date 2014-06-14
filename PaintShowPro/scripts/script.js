@@ -55,4 +55,9 @@
     triangleButton.addEventListener('click', drawTriangle);
     triangleButton.stage = stage;
     triangleButton.mainLayer = mainLayer;
+
+    var introButton = document.getElementById('intro');
+    introButton.addEventListener('click', createAnimation);
+    introButton.stage = stage;
+    introButton.mainLayer = mainLayer;
 }

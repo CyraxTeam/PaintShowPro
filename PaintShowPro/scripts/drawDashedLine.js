@@ -1,8 +1,9 @@
 ﻿function drawDashedLine(ev) {
-   
     var stage = ev.target.stage;
     var mainLayer = ev.target.mainLayer;
     var points = [];
+    var mouseClickX,
+    mouseClickY;
 
     $('#lineProperties').css('visibility', 'visible');
    
@@ -13,10 +14,6 @@
         return lineProperty;
     }
 
-   
-    var mouseClickX,
-    mouseClickY;
-   
     $('#canvas-container').on('mousedown', function (ev) {
             getPointCooord(ev);
     });

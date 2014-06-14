@@ -4,7 +4,7 @@
         var mainLayer = ev.target.mainLayer;
         
         var mouseClickX,
-          mouseClickY;
+            mouseClickY;
         var points = [];
         if (points.lenght!==0) {
             points = [];

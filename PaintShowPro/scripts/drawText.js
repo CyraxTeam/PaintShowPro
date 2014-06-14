@@ -16,16 +16,15 @@
             var textarea = document.getElementById('textarea-text-to-draw');
             var textToAdd = textarea.value;
 
-            console.log(textToAdd);
-            console.log('ENTER!!!');
             textarea.parentNode.removeChild(textarea);
             var text = new Kinetic.Text({
                 x: 10,
                 y: 15,
                 text: textToAdd,
-                fontSize: 30,
                 fontFamily: 'Calibri',
-                fill: 'green',
+                fill: document.getElementById('fillColor').value,
+                stroke: document.getElementById('strokeColor').value,
+                fontSize: 30 + document.getElementById('strokeWeight').value * 5,
                 draggable: true
             });
             mainLayer.add(text);

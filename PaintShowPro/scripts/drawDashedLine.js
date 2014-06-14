@@ -1,29 +1,42 @@
-﻿(function () {
-    var lineButton = document.querySelector('#dahedline');
-    lineButton.addEventListener('click', onDashLienButtonClick);
+﻿function drawDashedLine(stage, mainLayer) {
 
-    function onDashLienButtonClick(ev) {
-        var lineProp = document.getElementById('lineProperties');
-        lineProp.style.visibility = 'visible';
-        var dash = document.getElementById('dash');
-        var gap = document.getElementById('gap');
-        dash.addEventListener('change', getDashValue);
-        dash.addEventListener('change', getGapValue);
-        var dashValue = document.getElementById('dash').value;
-        var gapValue = document.getElementById('gap').value;
-        var dash = [dashValue * 1, gapValue * 1];
+    var dashedLineButton = document.getElementById('dahedline');
+    dashedLineButton.addEventListener('click', function () {
 
-
-
-        function getDashValue() {
+        var div = document.getElementById('lineProperties');
+        div.style.visibility = 'visible';
+         function getDashLineProp(){
             var dashValue = document.getElementById('dash').value;
-            return dashValue;
-        }
-        function getGapValue() {
             var gapValue = document.getElementById('gap').value;
-            return gapValue;
-        }
-    }
+            var lineProperty = [dashValue * 1, gapValue * 1];
+            return lineProperty;
+         }
 
+        var paper = document.getElementById('canvas-container'),
+            mouseClickX,
+            mouseClickY;
 
-}())
+        paper.addEventListener('mousedown', function (ev) {
+            mouseClickX = ev.layerX
+            mouseClickY = ev.layerY
+            lineWeight = document.getElementById('strokeWeight').value;
+            strokeColor = document.getElementById('strokeColor').value;
+        });
+
+        paper.addEventListener('mouseup', function (ev) {
+            paper.style.cursor = 'crosshair';
+            var dashedLine = new Kinetic.Line({
+                points: [mouseClickX, mouseClickY, ev.layerX, ev.layerY],
+                stroke: document.getElementById('strokeColor').value,
+                strokeWidth: document.getElementById('strokeWeight').value,
+                lineCap: 'round',
+                lineJoin: 'round',
+                dash:getDashLineProp()
+            })
+
+            mainLayer.add(dashedLine);
+            stage.add(mainLayer);
+        });
+
+    }, false);
+}

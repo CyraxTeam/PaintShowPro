@@ -66,8 +66,10 @@
     <Content Include="scripts\drawElipse.js" />
     <Content Include="scripts\drawFreeLine.js" />
     <Content Include="scripts\drawLine.js" />
+    <Content Include="scripts\drawPoligon.js" />
     <Content Include="scripts\drawRectangle.js" />
     <Content Include="scripts\drawText.js" />
+    <Content Include="scripts\drawTriangle.js" />
     <Content Include="scripts\jquery-2.1.1.js" />
     <Content Include="scripts\kinetic-v5.1.0.min.js" />
     <Content Include="scripts\script.js" />

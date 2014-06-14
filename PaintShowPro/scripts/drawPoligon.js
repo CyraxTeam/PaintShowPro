@@ -24,9 +24,9 @@
         //});
        
         function collectMouseCoord(ev) {
-            
-            mouseClickX = ev.pageX
-            mouseClickY = ev.pageY
+            var mousePos = stage.getPointerPosition();
+            mouseClickX = mousePos.x;
+            mouseClickY = mousePos.y;
             points.push(mouseClickX * 1);
             points.push(mouseClickY * 1);
         }

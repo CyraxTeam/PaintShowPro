@@ -206,7 +206,7 @@ body div#wrapper div#container div#figure-selection div#lineProperties label {
   font-weight: bold;
   margin-right: 5px;
 }
-body div#wrapper div#container div#coordinates {
+body div#wrapper div#container div#coord {
   border: 1px solid #535252;
   background: #f1f1f1;
   box-shadow: inset 2px 2px 10px #606a76;
@@ -215,7 +215,7 @@ body div#wrapper div#container div#coordinates {
   width: 900px;
   margin-top: 10px;
 }
-body div#wrapper div#container div#coordinates span {
+body div#wrapper div#container div#coord span {
   color: black;
   font-weight: bold;
   margin-right: 20px;

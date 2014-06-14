@@ -45,5 +45,6 @@
         mainLayer.add(dashedLine);
         stage.add(mainLayer);
         points = [];
+        $('#canvas-container').unbind();
     }
 }

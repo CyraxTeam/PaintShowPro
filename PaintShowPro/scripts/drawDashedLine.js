@@ -21,11 +21,10 @@
             getPointCooord(ev);
     });
 
-    $('#canvas-container').on('mousedown', function (ev) {
+    $('#canvas-container').on('mouseup', function (ev) {
         drawLine(ev);
     });   
     
-
     function getPointCooord(ev) {
         var mousePos = stage.getPointerPosition();
             mouseClickX = mousePos.x;
@@ -43,10 +42,11 @@
             strokeWidth: document.getElementById('strokeWeight').value,
             lineCap: 'round',
             lineJoin: 'round',
-            dash: getDashLineProp()
+            dash: getDashLineProp(),
+            draggable: true
         })
         mainLayer.add(dashedLine);
         stage.add(mainLayer);
-        
+        points = [];
     }
 }

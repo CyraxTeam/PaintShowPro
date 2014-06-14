@@ -36,7 +36,7 @@
     textButton.stage = stage;
     textButton.mainLayer = mainLayer;
 
-    var dashedLineButton = document.getElementById('dashedLine');
+    var dashedLineButton = document.getElementById('dashedline');
     dashedLineButton.addEventListener('click', drawDashedLine);
     dashedLineButton.stage = stage;
     dashedLineButton.mainLayer = mainLayer;

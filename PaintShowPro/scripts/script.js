@@ -41,6 +41,11 @@
     dashedLineButton.stage = stage;
     dashedLineButton.mainLayer = mainLayer;
 
+    var drawLineButton = document.getElementById('line');
+    drawLineButton.addEventListener('click', drawLine);
+    drawLineButton.stage = stage;
+    drawLineButton.mainLayer = mainLayer;
+
     var poligonButton = document.getElementById('poligon');
     poligonButton.addEventListener('click', drawPoligon);
     poligonButton.stage = stage;

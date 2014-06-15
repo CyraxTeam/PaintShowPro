@@ -65,6 +65,7 @@
     <Content Include="imgs\pentagon.png" />
     <Content Include="imgs\polygon.png" />
     <Content Include="imgs\rect.png" />
+    <Content Include="imgs\text-holder.png" />
     <Content Include="imgs\triangle.png" />
     <Content Include="imgs\triangle19.png" />
     <Content Include="imgs\vector15.png" />
